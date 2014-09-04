@@ -10,13 +10,8 @@ package observerpattern;
  *
  * @author alexroverandom
  */
-public class ObserverPattern {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.out.print("How long will I love you?");
-    }
-    
+public interface ISubject {
+    public void registerObserver(Observer o);
+    public void removeObserver(Observer o);
+    public void notifyObservers();
 }
